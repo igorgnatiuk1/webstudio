@@ -3,16 +3,20 @@
   --black: #212121;
   --white: #ffffff;
 }
+a {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
 p {
   margin: 0;
 }
-h1 {
-  margin-bottom: 30px;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 body {
   color: #212121;
   font-family: Roboto;
@@ -22,16 +26,26 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
 }
-ul {
-  list-style: none;
+/* header */
+.header .item {
+  display: flex;
+  align-items: center;
 }
-header a,
-.footer a {
-  text-decoration: none;
-  color: var(--black);
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .address {
+  display: flex;
+}
+.header address {
+  margin-left: auto;
+}
+.header .list:not(:last-child) {
+  margin-right: 50px;
 }
 
 header ul {
@@ -42,8 +56,42 @@ header .container {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+.nav-main {
+  display: flex;
+}
+
+.logo {
+  margin-right: 93px;
+
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.web-logo {
+  color: var(--blue);
+}
+
+.link:hover {
+  color: var(--blue);
+}
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+.address li:first-of-type {
+  margin-right: 40px;
+}
 .active {
   color: var(--blue);
+}
+
+/* hero */
+h1 {
+  margin-bottom: 30px;
 }
 
 .button-hero {
@@ -69,29 +117,19 @@ header .container {
   font-weight: 900;
   line-height: 1.5;
 }
-.logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.17;
-}
-.web-logo {
-  color: var(--blue);
-}
-p {
-  color: #757575;
-}
-.link:hover {
-  color: var(--blue);
-}
-.link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.17;
-}
+/* info */
 .info {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.info .container {
+  display: flex;
+}
+.info li {
+  width: 270px;
+}
+.info li:not(:last-child) {
+  margin-right: 30px;
 }
 .info h3 {
   font-size: 14px;
@@ -99,8 +137,19 @@ p {
   line-height: 1.17;
   margin-bottom: 10px;
 }
-.photos {
+
+p {
+  color: #757575;
+}
+/* photos */
+.photos .container {
   padding-bottom: 94px;
+}
+.photos ul {
+  display: flex;
+}
+.photos li:not(:last-child) {
+  margin-right: 30px;
 }
 .photos h2,
 .commands h2 {
@@ -110,14 +159,32 @@ p {
   font-weight: 700;
   line-height: 1.17;
 }
+
+/* commandos */
 .commands {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .commands img {
-  margin-bottom: 30px;
+  display: block;
 }
+.commands ul {
+  width: 100%;
+  display: flex;
+}
+.commands li {
+  width: 270px;
+  padding: 0;
+}
+.commands li:not(:last-child) {
+  margin-right: 30px;
+}
+.block {
+  text-align: center;
+  padding: 30px 0;
+}
+
 .commands h3 {
   margin-bottom: 10px;
   font-size: 16px;
@@ -129,6 +196,7 @@ p {
   font-weight: 400;
   line-height: 1.17;
 }
+/* footer */
 .city {
   color: var(--white);
 }
@@ -146,8 +214,16 @@ p {
 footer .logo {
   display: inline-block;
   margin-bottom: 28px;
+  margin-right: 0;
 }
+
+.footer a {
+  color: var(--white);
+}
+/* main gallery */
 .radio-button {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -162,11 +238,27 @@ footer .logo {
   font-weight: 500;
   line-height: 1.62;
 }
+.radio-button li:not(:last-child) {
+  margin-right: 8px;
+}
 .radio-button button:hover,
 .radio-button button:focus {
   color: var(--white);
   background-color: var(--blue);
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.gallery li {
+  width: 370px;
+  margin: 15px;
+}
+.gallery div {
+  padding: 20px 24px;
+}
+
 .gallery h3 {
   margin-bottom: 4px;
   font-size: 18px;
