@@ -44,6 +44,9 @@ body {
 .header address {
   margin-left: auto;
 }
+.header svg {
+  margin-right: 10px;
+}
 .header .list:not(:last-child) {
   margin-right: 50px;
 }
@@ -69,48 +72,39 @@ header .container {
   font-weight: 700;
   line-height: 1.17;
 }
+.logo-box {
+  text-align: center;
+  align-content: center;
+}
+.logo-box svg {
+  width: 70px;
+  height: 70px;
+}
 .web-logo {
   color: var(--blue);
 }
 
 .link:hover {
   color: var(--blue);
+  fill: var(--blue);
 }
 .link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
 }
+.address a {
+  display: flex;
+  align-items: center;
+}
 
 .address li:first-of-type {
   margin-right: 40px;
 }
+
 .active {
   color: var(--blue);
 }
-
-.address li:nth-of-type(2)::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.svg);
-  margin-right: 10px;
-}
-.address li:nth-of-type(1)::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.svg);
-  margin-right: 10px;
-}
-/* .address .link {
-  display: inline-block;
-  align-items: center;
-} */
 
 /* hero */
 .hero {
@@ -157,31 +151,16 @@ h1 {
 .info li {
   width: 270px;
 }
-.info li::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-.antena::before {
-  background-image: url('../images//info/antenna\ 1.svg');
-}
-.diagramma::before {
-  background-image: url('../images/info/diagram\ 1.svg');
-}
-.clock::before {
-  background-image: url('../images/info/clock\ 1.svg');
-}
-.astronavt::before {
-  background-image: url('../images/info/astronaut\ 1.svg');
-}
 .info li:not(:last-child) {
   margin-right: 30px;
+}
+.logo-box {
+  /* display: block; */
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 .info h3 {
   font-size: 14px;
@@ -204,7 +183,8 @@ p {
   margin-right: 30px;
 }
 .photos h2,
-.commands h2 {
+.commands h2,
+.clients h2 {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
@@ -225,9 +205,13 @@ p {
   width: 100%;
   display: flex;
 }
-.commands li {
+.site-nav {
   width: 270px;
   padding: 0;
+  background-color: var(--white);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 2px 1px 0px #00000033;
 }
 .commands li:not(:last-child) {
   margin-right: 30px;
@@ -244,6 +228,13 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  background-color: #2196f3;
+}
+.li svg {
+  width: 20px;
+  height: 20px;
 }
 
 .li .item:not(:last-child) {
@@ -266,6 +257,47 @@ p {
   line-height: 1.17;
   margin-bottom: 16px;
 }
+/* clients */
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients .logo {
+  margin: 0;
+  display: flex;
+}
+.clients .item {
+  width: calc((1170px - 150px) / 6);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients .item:hover {
+  border: 1px solid var(--blue);
+  cursor: pointer;
+}
+.clients a {
+  display: block;
+  height: 92px;
+  fill: #afb1b8;
+  align-content: center;
+  text-align: center;
+}
+.clients a:hover {
+  fill: var(--blue);
+}
+/* .clients .item a {
+  text-align: center;
+  align-content: center;
+} */
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients svg {
+  width: 106px;
+  height: 60px;
+}
+
 /* footer */
 .city {
   color: var(--white);
