@@ -1,6 +1,15 @@
+:root {
+  --color_black: #212121;
+  --color-dark: #2f303a;
+  --color_blue: #2196f3;
+  --color_white: #ffffff;
+  --color_gray: #757575;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
+  line-height: 1.17;
 }
 
 li {
@@ -19,6 +28,8 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+
+  color: var(--color_black);
 }
 
 img {
@@ -33,42 +44,73 @@ img {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.15;
+
+  color: var(--color_blue);
+}
+
+.logo span {
+  color: var(--color_black);
+}
+.logo .white {
+  color: var(--color_white);
 }
 .navigator .link {
+  color: var(--color_black);
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.17;
+}
+.navigator .link:hover,
+.navigator .link:focus {
+  color: var(--color_blue);
 }
 .address .link {
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.17;
+  color: var(--color_gray);
 }
-
+.address .link:hover,
+.address .link:focus {
+  color: var(--color_blue);
+}
 /* HERO */
-
+.hero {
+  background-color: #2f303a;
+}
 .hero h1 {
-  font-family: Roboto;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+
+  color: var(--color_white);
 }
 .hero button {
+  border: 0;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
+
+  color: var(--color_white);
+  background-color: var(--color_blue);
+}
+
+.hero button:hover,
+.hero button:focus {
+  color: var(--color_blue);
+  background-color: var(--color_white);
 }
 /* TASK */
 .task h3 {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.17;
+
+  color: var(--color_black);
 }
 .task p {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
+
+  color: var(--color_gray);
 }
 
 /* EMPLOYEES */
@@ -79,38 +121,56 @@ img {
 .name {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.17;
+
+  color: var(--color_black);
 }
 .position {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.17;
+  color: var(--color_gray);
 }
 
 /* FOTTER */
 
+footer {
+  background-color: var(--color-dark);
+}
+
 .address .item {
   font-style: normal;
   font-size: 14px;
-  font-weight: 400;
+
+  color: var(--color_gray);
+
   line-height: 1.71;
+}
+.item.city {
+  color: var(--color_white);
 }
 
 /* PORTFOLIO */
 
-.gallery {
+.gallery button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-}
+  border: 0;
 
+  color: var(--color-dark);
+  background-color: #f5f4fa;
+}
+.gallery button:hover,
+.gallery button:focus {
+  color: var(--color_white);
+  background-color: var(--color_blue);
+}
 .gallery h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  color: var(--color_black);
 }
 .gallery p {
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.87;
+  color: var(--color_gray);
 }
