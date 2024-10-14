@@ -1,0 +1,116 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* HEADER */
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.navigator .link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+.address .link {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+/* HERO */
+
+.hero h1 {
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+}
+.hero button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+}
+/* TASK */
+.task h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.task p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* EMPLOYEES */
+.employees img {
+  width: 270px;
+  height: 260px;
+}
+.name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+.position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+/* FOTTER */
+
+.address .item {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* PORTFOLIO */
+
+.gallery {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.gallery h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+.gallery p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+}
