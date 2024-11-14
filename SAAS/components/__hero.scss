@@ -1,0 +1,73 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(.././images/hero/mobile1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/hero/mobile2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(.././images/hero/desktop1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/hero/desktop2x.jpg);
+  }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(.././images/hero/comp1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/hero/comp2x.jpg);
+  }
+  }
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.hero__title {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  color: white;
+  background-color: $color-accent;
+  padding: 10px 24px;
+  border-radius: 4px;
+  transition: background-color  250ms linear;
+  &:hover,
+  :focus {
+    background-color: white;
+    color: $color-accent;
+  }
+}

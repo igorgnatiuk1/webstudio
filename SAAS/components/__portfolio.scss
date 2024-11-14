@@ -1,0 +1,133 @@
+.projects {
+  padding: 60px 0;
+}
+
+.project__nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.item__nav {
+  &:not(:nth-child(3), :last-child) {
+    margin-right: 8px;
+  }
+  &:nth-child(n + 4) {
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(3) {
+      margin-right: 8px;
+    }
+    &:nth-child(n + 4) {
+      margin-top: 0;
+    }
+  }
+}
+
+.project__button {
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: black;
+  padding: 6px 23px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  transition: color 150ms linear;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $color-accent;
+    box-shadow: 0px 2px 6px darkgray;
+  }
+}
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.projects__item {
+  height: 404px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 6px darkgray;
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.projects__item:hover .projects__description {
+  transform: translateY(0);
+}
+.projects__thumb {
+  height: 110px;
+  padding: 20px 0 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-top: 0;
+}
+
+.project__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__description {
+  transition: transform 250ms linear;
+  opacity: 1;
+  position: absolute;
+  transform: translateY(100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  padding-left: 18px;
+  padding-top: 49px;
+  color: white;
+  background-color: $color-accent;
+}
+
+.projects__title {
+  text-align: start;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.projects__group {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  color: rgba(117, 117, 117, 1);
+}
